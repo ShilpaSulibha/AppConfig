@@ -25,6 +25,8 @@ spec:
             - containerPort: 8085
               protocol: TCP     
           env:
+            - name: JAVA_OPTS
+              value: "-Xms300m -Xmx716m"
             - name: SPRING_PROFILES_ACTIVE
               value: cloud
             - name: APP_VERSION
